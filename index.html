@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Aprendiendo Javascript I</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Aprendiendo Javascript I</h1>
+					<h3>Un pequeño paso para un joven, un gran paso para la tecnología...</h3>
+					<small>
+					<p>
+						<a href="http://twitter.com/oagranada">@oagranada</a>
+					</p>
+					<p>
+						<a href="http://twitter.com/oagranada">
+							<img src="http://www.gravatar.com/avatar/edd3dba8c2a972fe9365ce20e5eb617b" alt="fotografia" width="50px" style="border-radius:50px" />
+						</a>
+					</p>
+					</small>
+				</section>
+
+<!--
+				<section id="transitions">
+					<h2>Transición</h2>
+					<p>
+						Cual sera mejor... <br>
+						<a href="?transition=cube#/transitions">Cube</a> -
+						<a href="?transition=page#/transitions">Page</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a> -
+						<a href="?transition=linear#/transitions">Linear</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?#/transitions">Default</a>
+					</p>
+				</section>
+-->
+				<section id="themes">
+					<h2>Tema</h2>
+					<p>
+						Con cual se ve mejor... <br>
+						<a href="?#/themes">Default</a> -
+						<a href="?theme=sky#/themes">Sky</a> -
+						<a href="?theme=beige#/themes">Beige</a> -
+						<a href="?theme=simple#/themes">Simple</a> -
+						<a href="?theme=serif#/themes">Serif</a> -
+						<a href="?theme=night#/themes">Night</a> <br>
+						<a href="?theme=moon#/themes">Moon</a> -
+						<a href="?theme=solarized#/themes">Solarized</a>
+					</p>
+					<p>
+						<small>
+							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Historia</h2>
+					<p>
+						En 1994 Brendan Eich creo el lenguaje como una manera de hacer mas dinamico el uso de los navegadores web.
+					</p>
+
+					<aside class="notes">
+						* El nombre fue asignado como una tecnica de mercadeo.
+						* Microsoft hizo algo similar llamado JScript.
+						* Desde 1994 se han implementado versiones para el servidor.
+					</aside>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>0k, pero ¿Qué es un lenguaje de programación?</h2>
+						<p>
+							Un lenguaje de programación es un lenguaje formal diseñado para expresar procesos que pueden ser llevados a cabo por máquinas como las computadoras.
+						</p>
+						<img width="300" height="300" src="http://www.blogodisea.com/wp-content/uploads/2011/01/esclavo.jpg" alt="Down arrow">
+						<aside class="notes">
+							* Es posible compararlo con un esclavo, por que hace todo lo que uno le dice.
+						</aside>
+					</section>
+					<section>
+						<h2>Algoritmo</h2>
+						<p>Es una serie de pasos logicos y finitos para llegar a la solución de un problema.</p>
+						<img width="300" src="http://t0.gstatic.com/images?q=tbn:ANd9GcT5DK2kXp89j2AEdN9gRummiV0EypYIp-hmmZ1gO7ScW-xoEICYxw" alt="Down arrow">
+					</section>
+					<section>
+						<h2>Programación y Algoritmos</h2>
+						<p>La programación y los algoritmos van de la mano, por que un algoritmo es la solución a un problema y la programación es la representación formal del algoritmo.</p>
+						<img width="300" src="http://programarencpp.files.wordpress.com/2010/11/programacion1.jpg" alt="Unicorn">
+					</section>
+				</section>
+
+				<section>
+					<h2>Muy bien, ¿y Javascript?</h2>
+					<p>
+						Javascript es uno de los muchos lenguajes de programación que existen.
+						<br/>
+						<img width="300" src="http://t1.gstatic.com/images?q=tbn:ANd9GcTCfXfQrj_cP3lC_AMLPKwExnzakPHB5-YTfrrTWL5ezdc4xFb9Bw" alt="Unicorn">
+					</p>
+				</section>
+
+				<section>
+					<h2>Entrando en Materia</h2>
+				</section>
+
+				<section>
+					<h2>Comentarios</h2>
+					
+					<p>
+					<pre><code data-trim contenteditable>
+
+// esto es un comentario, no hace nada pero entrega información
+
+					</code></pre>
+					</p>
+
+				</section>
+
+				<section>
+					<h2>Asignaciones</h2>
+					
+					<p>
+					Estos son ejemplos de asignaciones.
+					<pre><code data-trim contenteditable>
+
+
+edad = 26;
+nombre = "Andrés";
+obj = {"rol":"Jugador"};
+
+					</code></pre>
+					</p>
+					<img src="http://www.papeleradamian.com/embalajecajas/imagenarticulo/Caja%20carton%20corrugado%2030x50x30.jpg" alt="caja" width="250px">
+				</section>
+
+				<section>
+					<h2>Ciclos</h2>
+					
+					<p>
+					Estos son ejemplos de ciclos.
+					<pre><code data-trim contenteditable>
+
+
+while(edad<18){
+	console.log("Es menor de edad...");
+	edad += 1;
+}
+
+for(valor=0;valor<100;valor+=2) {
+	console.log("El numero " + valor + " es par...");
+}
+
+do {
+    console.log("Correeeeee...");
+}
+while (estaEnojado(perro));
+					</code></pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Funciones</h2>
+
+				</section>
+
+				<section>
+					<h2>¿Que es una función?</h2>
+					<p>
+						Es un subprograma el cual permite resolver una tarea específica.
+					</p>
+				</section>
+
+				<section>
+					<h2>Un saludo</h2>
+					<p>
+						Éste programa saluda.
+					</p>
+					<p>
+					<pre><code data-trim contenteditable>
+
+function saludo() {
+	console.log("Hola :D");
+}
+
+saludo();
+					</code></pre>
+					</p>
+				</section>
+
+				<section>
+					<h2>Parametros</h2>
+					<p>
+						Tambien es posible enviar datos adentro de las funciones.
+					</p>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+function saludo(nombre) {
+	var msg = "Hola " + nombre;
+	console.log( msg );
+}
+
+saludo();
+
+					</code></pre>
+				</section>
+
+				<section>
+
+					<h2>Closures</h2>
+
+				</section>
+
+				<section>
+					<h2>¿Que es un Closure?</h2>
+					<p>
+						Es una función que se crea dentro de otra función, esto es para encapsular ciertos procedimientos.
+					</p>
+
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+function saludo(nombre) {
+	function saludin() {
+		var msg = "Hola " + nombre;
+		console.log( msg );
+	}
+	saludin();
+}
+
+saludo();
+
+					</code></pre>
+				</section>
+
+				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+					<h2>Demo</h2>
+				</section>
+
+				<section>
+					<h2>Preguntas</h2>
+				</section>
+
+				
+				<section>
+					<h1>Gracias</h1>
+					<small>
+					<p>
+						<a href="http://twitter.com/oagranada">@oagranada</a>
+					</p>
+					<p>
+						<a href="http://twitter.com/oagranada">
+							<img src="http://www.gravatar.com/avatar/edd3dba8c2a972fe9365ce20e5eb617b" alt="fotografia" width="50px" style="border-radius:50px" />
+						</a>
+					</p>
+					</small>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
